@@ -10,5 +10,8 @@ WORKDIR /home/node/app
 # Copy app files to destionation folder
 COPY ./ ./
 
+# INSTALL DEPENDENCIES
+RUN npm install
+
 # Default command
 CMD ["node", "server.js"]
